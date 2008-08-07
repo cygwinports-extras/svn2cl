@@ -1,0 +1,19 @@
+DESCRIPTION="Subversion ChangeLog generator"
+HOMEPAGE="http://ch.tudelft.nl/~arthur/svn2cl/"
+SRC_URI="http://ch.tudelft.nl/~arthur/svn2cl/${P}.tar.gz"
+
+src_compile() { :; }
+
+src_install() {
+	cd ${S}
+	exeinto /usr/share/${PN}
+	doexe svn2cl.sh
+
+	insinto /usr/share/${PN}
+	doins svn2cl.xsl svn2html.*
+
+	dodir /usr/bin
+	dosym ../share/${PN}/svn2cl.sh /usr/bin/svn2cl
+
+	doman svn2cl.1
+}
