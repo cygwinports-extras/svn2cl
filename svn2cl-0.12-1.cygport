@@ -1,6 +1,6 @@
 DESCRIPTION="Subversion ChangeLog generator"
-HOMEPAGE="http://ch.tudelft.nl/~arthur/svn2cl/"
-SRC_URI="http://ch.tudelft.nl/~arthur/svn2cl/${P}.tar.gz"
+HOMEPAGE="http://arthurdejong.org/svn2cl/"
+SRC_URI="http://arthurdejong.org/svn2cl/${P}.tar.gz"
 
 src_compile() { :; }
 

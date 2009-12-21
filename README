@@ -1,0 +1,45 @@
+svn2cl
+------------------------------------------
+svn2cl is a simple xsl transformation and shell script wrapper for 
+generating a classic GNU-style ChangeLog from a subversion repository 
+log. It is made from several changelog-like scripts using common xslt 
+constructs found in different places.
+
+Runtime requirements:
+  bash
+  coreutils
+  gawk
+  grep
+  libxslt
+  sed
+  svn
+
+Canonical website:
+  http://arthurdejong.org/svn2cl/
+
+Canonical download:
+  http://arthurdejong.org/svn2cl/downloads.html
+
+-------------------------------------------
+
+Build instructions:
+  unpack svn2cl-0.12-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./svn2cl-0.12-X.cygport all
+
+This will create:
+  /usr/src/svn2cl-0.12-X-src.tar.bz2
+  /usr/src/svn2cl-0.12-X.tar.bz2
+
+-------------------------------------------
+
+Port Notes:
+
+----- version 0.12-1 -----
+Initial release for Cygwin 1.7.
+
+
+Cygwin port maintained by:
+http://sourceware.org/cygwinports/
